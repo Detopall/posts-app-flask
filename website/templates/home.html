@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block username %} <p id="username"> {{username}} </p> {% endblock username %}
+
+{% block content %}
+
+<ul id="user-texts">
+	{% for text in user.texts %}
+		<li> <button type="button" data-id="{{text.id}}"> X </button> {{ text.data }} -- {{ text.date }} </li>
+	{% endfor %}
+</ul>
+
+<h1> Create Text </h1>
+<form method="POST" id="texts">
+	<textarea name="text" id="text" rows="4" cols="50"></textarea>
+	<button type="submit"> Send </button>
+</form>
+
+{% endblock content %}

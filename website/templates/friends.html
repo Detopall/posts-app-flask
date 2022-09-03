@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block username %} <p id="username"> {{username}} </p> {% endblock username %}
+
+{% block content %}
+
+<ul id="friends-texts">
+	{% for user in user_list %}
+		{% if user.username != username %}
+			<h3> {{user.username}} </h3>
+			{% for text in user.texts %}
+				<li> {{ text.data }} -- {{ text.date }} </li>
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+</ul>
+
+{% endblock content %}

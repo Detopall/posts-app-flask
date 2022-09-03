@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block username %} {% endblock username %}
+
+{% block content %} 
+
+<h3> Login </h3>
+<form method="POST">
+	<label for="username"> Username </label>
+	<input type="text" id="username" name="username" min="1" max="150" autocomplete="off">
+
+	<label for="password"> Password </label>
+	<input type="password" id="password" name="password" min="7" max="150" autocomplete="off">
+	
+	<button type="submit"> Login </button>
+</form>
+
+
+{% endblock content %}

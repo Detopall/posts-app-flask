@@ -1,0 +1,125 @@
+body {
+	width: 80%;
+	margin: 10rem 4rem;
+	font-size: 1.5rem;
+	font-family: 'Lucida Sans', 'Comic Sans MC' sans-serif;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	padding: 0.5rem;
+	border: 0.1rem solid black;
+	background-color: darkgrey;
+}
+
+nav > a {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-decoration: none;
+	color: black;
+}
+
+nav > a:hover {
+	color: white;
+}
+
+nav #username {
+	padding-right: 20rem;
+	align-items: center;
+}
+
+main {
+	border: 0.1rem solid black;
+	background-color: lightgrey;
+	padding-bottom: 3rem;
+}
+
+h3 {
+	margin-left: 40%;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 15rem;
+	margin-left: 40%;
+}
+
+form > label, input {
+	margin-bottom: 0.5rem;
+}
+
+button {
+	margin-top: 1rem;
+	width: 5rem;
+}
+
+div.success {
+	background-color: green;
+}
+
+div.error {
+	background-color: red;
+}
+
+div.success, div.error {
+	text-align: center;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 5rem;
+	margin-left: 5rem;
+	text-decoration: underline;
+}
+
+#texts {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5rem;
+}
+
+textarea {
+	resize: none;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+#texts button {
+	text-align: center;
+	border-radius: 0.5rem;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#texts button:hover {
+	background-color: aqua;
+}
+
+#user-texts li {
+	list-style-type: none;
+}
+
+#friends-texts h3 {
+	margin-left: 0;
+}
+
+#user-texts button {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#user-texts button:hover {
+	background-color: orangered;
+}
